@@ -10,19 +10,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:description" content="free tate!!">
         <link rel="shortcut icon" type="image/png" href="./images/greytick.png">
-
+        <script src="./js/index.js"></script>
         <title>Checklist</title>
-
     </head>
 
     <body>
         <h1>
             enter your tasks below
         </h1>
-            
-        <li>
-            <input></input>
-        </li>
+        
+        
+
+        <input type="text" onkeydown="return keydownHandler(event)" id="mainInput"></input>
+        <button onclick="handleButton()">clear</button>
+        <div id="fort" style="padding-top: 10px;">
+
+        </div>
+
+        <p id="elements"></p>
     </body>
 
     <footer>
