@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./css/styles.css">
 
 <!DOCTYPE html>
 
@@ -10,29 +10,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:description" content="free tate!!">
         <link rel="shortcut icon" type="image/png" href="./images/greytick.png">
-
+        <script src="./js/index.js"></script>
         <title>Checklist</title>
-
     </head>
 
     <body>
-            <h1>
-                enter your tasks below
-            </h1>
-            
-            <li>
+        <h1>
+            enter your tasks below
+        </h1>
+        
+        
 
-                <input></input>
+        <input type="text" onkeydown="return keydownHandler(event)" id="mainInput"></input>
+        <button onclick="handleButton()">clear</button>
+        <div id="fort" style="padding-top: 10px;">
 
-            </li>
-             
+        </div>
+
+        <p id="elements"></p>
     </body>
 
     <footer>
 
         <span>
             <a href="https://github.com/cosmicost">
-                &copy; 2023 Cosmic</a>
+                &copy; 2023 Cosmic & sleepy</a>
         </span>
         
         <b class="jamal">
@@ -40,10 +42,8 @@
         </b>
 
         <span>
-
             <a href="https://github.com/cosmicost/cosmicost.github.io">
                  sourcecode</a> 
-
         </span>
     </footer>
 </html>
